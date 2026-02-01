@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Interactivity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>JavaScript Interactivity Demo</h1>
+
+    <!-- Dropdown -->
+    <div class="section">
+        <button onclick="toggleDropdown()">Show Options</button>
+        <ul id="dropdown" class="hidden">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="section">
+        <button id="openModal">Open Modal</button>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <p>This is a modal popup!</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
